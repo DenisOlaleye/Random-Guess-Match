@@ -9,11 +9,13 @@ public class RandomGuessMatch
 		String input = JOptionPane.showInputDialog(null, "Please enter your number from 1 to 5");
 		int userNumber = Integer.parseInt(input);
 		
+		boolean isEqual = (random==userNumber);
+		JOptionPane.showMessageDialog(null, "Your guess was " +isEqual);
+		
 		int difference = random-userNumber;
 		JOptionPane.showMessageDialog(null, "The difference is " +difference);
 		
-		boolean isEqual = (random==userNumber);
-		JOptionPane.showMessageDialog(null, "Your guess was " +isEqual);
+		
 		
 		
 	}
